@@ -593,9 +593,4 @@ $(function(){
 			$("#photo_big .center").animate({attr:"o",target:"0",speed:13});
 		},800)
 	}
-
-	//test
-		/*网页自动*/(function(){if(false){var scroll= "600";document.documentElement.scrollTop = scroll;window.addEventListener("focus",function(){location.search="";},false)}})();
-		/*网页刷新按钮*/(function(){if(true){var fresh_top="90%";var fresh_left="00%";var fresh = document.createElement("input");fresh.id="refresh";fresh.type="button";fresh.value="刷新";document.body.appendChild(fresh);$("#refresh").css("width","100px").css("height","50px").css("position","fixed").css("top",fresh_top).css("left",fresh_left).css("zIndex","9999999999").click(function(){location.search="";});}})();
-		/*控制台数秒器*/(function(){var shumiao = false;var shumiao_num = 10;if(shumiao){console.log("剩余（开始）秒数：" + shumiao_num);var shumiao_timer = setInterval(function(){console.log("剩余秒数：" + --shumiao_num);if(shumiao_num==0)clearInterval(shumiao_timer);},1000);}})();
 });
